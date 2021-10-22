@@ -1,0 +1,60 @@
+body {
+    background: #fafafa;
+  }
+  
+  .goku {
+    position: absolute;
+    bottom: 0;
+    background-image: url(goku.png);
+    width: 60px;
+    height: 60px;
+  }
+  
+  .cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(cactus.png);
+  }
+  
+  .game-over {    
+    text-align: center;
+    color: #666;
+    margin: 400px 0 0 0;
+    font-family: arial;
+  }
+
+  .press-enter {
+    animation: blinker 2s linear infinite;
+    text-align: center;
+    color: #666;
+    margin: 20px 0;
+    font-family: arial;
+  }  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  
+  @keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  .background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url('/background3.jpg');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+  }
